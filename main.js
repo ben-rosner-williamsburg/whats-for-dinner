@@ -1,3 +1,5 @@
+var addRecipeBtn = document.querySelector("#addRecipeBt")
+
 var sides = [
     "Miso Glazed Carrots",
     "Coleslaw",
