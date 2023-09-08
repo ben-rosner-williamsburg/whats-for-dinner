@@ -1,4 +1,10 @@
-var addRecipeBtn = document.querySelector("#addRecipeBt")
+var letsCookBtn = document.querySelector("#letsCook");
+var sideRadioBtn = document.querySelector("#side");
+var mainDishRadioBtn = document.querySelector("#mainDish");
+var dessertRadioBtn = document.querySelector("#dessert");
+var cookpot = document.querySelector("#cookpot");
+
+
 
 var sides = [
     "Miso Glazed Carrots",
