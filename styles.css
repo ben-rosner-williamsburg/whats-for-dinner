@@ -58,7 +58,7 @@ h1, label {
 
 .modal {
     background-color: rgba(225, 225, 225, .9);
-    width: 450px;
+    width: 550px;
     height: 350px;
     margin: 60px;
     display: flex;
@@ -100,6 +100,24 @@ label {
     padding-left: auto;
 }
 
+.hidden {
+    display: none;
+}
+
+.meal, .pre-text {
+    margin: 0 auto;
+}
+
+.meal {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.pre-text {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
 
 
 
