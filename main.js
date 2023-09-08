@@ -55,3 +55,8 @@ var desserts = [
     "Croissants",
     "Eclairs"
 ]
+
+letsCookBtn.addEventListener("click", function (event){
+    event.preventDefault()
+    console.log(event);
+})
