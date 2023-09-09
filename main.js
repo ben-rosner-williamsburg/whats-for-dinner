@@ -57,28 +57,25 @@ var desserts = [
     "Eclairs"
 ]
 
-letsCookBtn.addEventListener("click", function (event, side, main, dessert){
-    if (sideRadioBtn.checked){
-        event.preventDefault();
+letsCookBtn.addEventListener("click", function (event, side, main, dessert) {
+    event.preventDefault();
+    if (sideRadioBtn.checked) {
         side = getMeal(sides);
         toggleImg(cookpot);
         displayMeal(side, modalTwo);
     }
-    else if (mainDishRadioBtn.checked){
-        event.preventDefault();
+    else if (mainDishRadioBtn.checked) {
         main = getMeal(mains);
         toggleImg(cookpot);
         displayMeal(main, modalTwo);
     }
 
-    else if (dessertRadioBtn.checked){
-        event.preventDefault();
+    else if (dessertRadioBtn.checked) {
         dessert = getMeal(desserts);
         toggleImg(cookpot);
         displayMeal(dessert, modalTwo);
     }
-    else if (entireMealBtn.checked){
-        event.preventDefault();
+    else if (entireMealBtn.checked) {
         side = getMeal(sides);
         main = getMeal(mains);
         dessert = getMeal(desserts);
@@ -87,25 +84,25 @@ letsCookBtn.addEventListener("click", function (event, side, main, dessert){
     }
 })
 
-function getMeal(meals){
+function getMeal(meals) {
     var mealIndex = randomIndex(meals);
     return meals[mealIndex];
 }
 
-function randomIndex(meals){
+function randomIndex(meals) {
     var index = Math.floor(Math.random() * meals.length);
     return index;
 }
 
-function toggleImg(image){
+function toggleImg(image) {
     image.classList.toggle('hidden');
 }
 
-function displayMeal(meal, container){
+function displayMeal(meal, container) {
     container.innerHTML = `<p class="pre-text">You should make:</p><h1 class="meal">${meal}!</h1>`;
 }
 
-function displayFullMeal(side, main, dessert, container){
+function displayFullMeal(side, main, dessert, container) {
     container.innerHTML = `<p class="pre-text">You should make:</p>
     <h2 class="full-meal">${main} with a side of ${side} and ${dessert} for 
     dessert!`;
