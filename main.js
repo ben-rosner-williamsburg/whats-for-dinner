@@ -4,7 +4,7 @@ var mainDishRadioBtn = document.querySelector("#mainDish");
 var dessertRadioBtn = document.querySelector("#dessert");
 var cookpot = document.querySelector("#cookpot");
 var modalTwo = document.querySelector(".modal-two");
-
+var entireMealBtn = document.querySelector("#entireMeal");
 
 
 var sides = [
@@ -57,36 +57,44 @@ var desserts = [
     "Eclairs"
 ]
 
-letsCookBtn.addEventListener("click", function (event, meal){
+letsCookBtn.addEventListener("click", function (event, side, main, dessert){
     if (sideRadioBtn.checked){
         event.preventDefault();
-        meal = getMeal(sides);
+        side = getMeal(sides);
         toggleImg(cookpot);
-        displayMeal(meal, modalTwo);
+        displayMeal(side, modalTwo);
     }
     else if (mainDishRadioBtn.checked){
         event.preventDefault();
-        meal = getMeal(mains);
+        main = getMeal(mains);
         toggleImg(cookpot);
-        displayMeal(meal, modalTwo);
+        displayMeal(main, modalTwo);
     }
 
     else if (dessertRadioBtn.checked){
         event.preventDefault();
-        meal = getMeal(desserts);
+        dessert = getMeal(desserts);
         toggleImg(cookpot);
-        displayMeal(meal, modalTwo);
+        displayMeal(dessert, modalTwo);
+    }
+    else if (entireMealBtn.checked){
+        event.preventDefault();
+        side = getMeal(sides);
+        main = getMeal(mains);
+        dessert = getMeal(desserts);
+        toggleImg(cookpot);
+        displayFullMeal(side, main, dessert, modalTwo);
     }
 })
 
 function getMeal(meals){
-    var mealIndex = randomIndex(meals)
-    return meals[mealIndex]
+    var mealIndex = randomIndex(meals);
+    return meals[mealIndex];
 }
 
 function randomIndex(meals){
     var index = Math.floor(Math.random() * meals.length);
-    return index
+    return index;
 }
 
 function toggleImg(image){
@@ -94,5 +102,11 @@ function toggleImg(image){
 }
 
 function displayMeal(meal, container){
-    container.innerHTML = `<p class="pre-text">You should make:</p><h1 class="meal">${meal}!</h1>`
+    container.innerHTML = `<p class="pre-text">You should make:</p><h1 class="meal">${meal}!</h1>`;
+}
+
+function displayFullMeal(side, main, dessert, container){
+    container.innerHTML = `<p class="pre-text">You should make:</p>
+    <h2 class="full-meal">${main} with a side of ${side} and ${dessert} for 
+    dessert!`;
 }
