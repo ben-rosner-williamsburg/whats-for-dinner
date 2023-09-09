@@ -25,6 +25,7 @@ body {
 
 h1, label {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 #headerText {
@@ -104,8 +105,9 @@ label {
     display: none;
 }
 
-.meal, .pre-text {
+.meal, .pre-text, .full-meal {
     margin: 0 auto;
+    text-align: center;
 }
 
 .meal {
@@ -119,5 +121,10 @@ label {
     font-weight: 400;
 }
 
+.full-meal {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
 
 
