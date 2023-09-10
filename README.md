@@ -1,51 +1,37 @@
-# What's for Dinner?
+# What's for Dinner? 
 
-## Overview
+### Abstract:
+This is an app that helps users decide what to make for dinner. Users can select whether they need
+help deciding what to make for a side, main dish, dessert or the entire meal. The app then displays
+what to make based on the user's selection.
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+### Installation Instructions:
+1. Clone the repo from GitHub onto your local machine
+2. Change your current directory into the whats-for-dinner repo using your computer's Terminal.
+3. Run 'open index.html' in yuor computer's Terminal.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+### Preview of App:
+![What\'s for Dinner Screenshot](whats_for_dinner_screenshot.png)
 
-The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/dinner.html). 
+### Context:
+This is my Mod 1 Solo Challenge for the Turing School of Software and Design Front End Engineering program. 
+I am 3 weeks into Mod 1.
 
-## Learning Goals
+### Contributors:
+- [Ben Rosner](https://github.com/ben-rosner-williamsburg)
 
+### Learning Goals:
 - Gain experience building an application that utilizes HTML, CSS and JavaScript
 - Write HTML and CSS to match a provided comp
 - Understand how to listen to and respond to user events
 - Individualize your programming skill set
 
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
-# What's for Dinner? 
-
-### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
-
-### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
-
-### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-
-### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
-
-### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
-
-### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
-
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+
+- Win: Getting the JavaScript to work properly using the SRP for each handler function
+- Challenge: Matching the comp exactly
+- Win: Figuring out the superscript tag in HTML to get the red asterisk to be positioned correctly
+- Win: Refactoring my code to get the event.preventDefault method working for all use cases
+- Challenge: Expanding the text box modals to center the text properly without the text breaking onto 
+a second line.
+
