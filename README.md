@@ -10,7 +10,7 @@ what to make based on the user's selection.
 2. Change your current directory into the whats-for-dinner repo using your computer's Terminal.
 3. Run 'open index.html' in yuor computer's Terminal.
 
-Deployed Link: https://ben-rosner-williamsburg.github.io/whats-for-dinner/
+#### Deployed Link: https://ben-rosner-williamsburg.github.io/whats-for-dinner/
 
 
 ### Preview of App:
